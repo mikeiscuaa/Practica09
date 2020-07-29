@@ -59,3 +59,28 @@ textarea{
     box-shadow: white 3px 3px 5px inset;
     border-radius: 15px;
 }
+/*ahora seleccionamos la clase btn, esta solamente la tienen los botones como se muestra en el html*/
+.btn{
+    border-radius: 15px;
+    background-color: gray;
+    box-shadow: white 5px 5px 5px inset;
+    color: azure;
+    width: 40%;
+    margin: auto;
+    letter-spacing: 3px;
+    /*vamos a agregarle una pequeña animacion en el evento hover, el primer argumento es a todos los elementos, despues cuanto va a durar la animacion, despues la distribucion de animacion(ease) y por ultimo el retardo(1 segundo)*/
+
+}
+/*ahora vamos a centrar los botones, como estan dentro de una caja llamada "botones" la llamamos así*/
+.botones{
+    display:flex;
+    justify-content: space-between;
+}
+/*ahora si vamos a agregar la animacion, podemos agregar mas animacion*/
+.btn:hover{
+    transition: all 3s ease .3s;
+    background-color: rgba(200,0,0,0.5);
+    transform: scale(1.2) rotate3d(0,1,0,720deg);
+    color:aqua;
+    letter-spacing: 14px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <h1>Practica de GitHub</h1>
+    <form action="enviar.php" method="post" name="formulario">
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
+        <input class="entrada" type="text" id="correo" name="correo" placeholder="Ingresa tu direccion de correo">
+        <input class="entrada" type="text" id="direccion" name="direccion" placeholder="Ingresa tu direccion">
+        <input class="entrada" type="text" id="telefono" name="telefono" placeholder="Ingresa tu telefono">
+        <textarea class="entrada" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aquí tus comentarios"></textarea>
+        <div class="botones">
+            <input class="btn" type="submit" value="ENVIAR" id="enviar">
+            <input class="btn" type="reset" value="BORRAR" id="borrar">
+        </div>
+    </form>
+</body>
+</html>

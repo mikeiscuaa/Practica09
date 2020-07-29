@@ -40,3 +40,22 @@ input, textarea{
     font-size: 16px;
 
 }
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*seleccionamos por id los botones*/
+/*hover es para cuando el mouse esta arriba del elemento, coloca la manita en los botones*/
+#borrar, #enviar:hover{
+    cursor: pointer;
+}
+/*ahora seleccionamos por clase todos los elementos que tienen la clase entrada, le podemos dar un estilo redondeado con sombra*/
+.entrada{
+    background-color: black;
+    color:gray;
+    box-shadow: white 3px 3px 5px inset;
+    border-radius: 15px;
+}
